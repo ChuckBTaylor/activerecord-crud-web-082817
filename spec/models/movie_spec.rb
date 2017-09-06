@@ -110,6 +110,7 @@ describe 'Movie' do
       end
 
       it 'can use a where clause and be sorted' do
+        # binding.pry
         expect(can_find_using_where_clause_and_be_sorted.map{|m| m.title}).to eq(["Movie_4", "Movie_3"])
       end
     end
